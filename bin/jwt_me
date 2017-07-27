@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'jwt-me'
+
+jwt_generator = JWT::App.new
+jwt_generator.run!(secret: ENV.fetch('SECRET').dup)
