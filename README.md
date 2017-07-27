@@ -25,3 +25,33 @@ Any additional inputs? (yes/no)
 $ no
 The JWT has been copied to your clipboard!
 ```
+
+## Local setup
+
+*NOTE:* This gem requires a modern version of ruby, and was developed with ruby 2.4.1
+
+See the excellent [ruby-install](https://github.com/postmodern/ruby-install) for how to install/upgrade your ruby.
+
+```bash
+git clone https://github.com/jdrago999/thredup-jwt-challenge.git
+cd thredup-jwt-challenge
+gem build jwt-me.gemspec
+sudo gem install jwt-me-0.1.0.gem
+```
+
+## Using the gem
+
+This gem installs an executable `jwt_me` in your `$PATH`
+
+Use it as follows:
+
+```bash
+$ SECRET=foobar jwt_me
+```
+
+## How to run tests
+
+```bash
+bundle
+bundle exec rspec
+```
