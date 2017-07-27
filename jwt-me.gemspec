@@ -14,12 +14,12 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'email_address'
+  spec.add_dependency 'email_address', '0.1.3'
   spec.add_development_dependency 'bundler', '~> 1.15'
   spec.add_development_dependency 'rspec', '~> 3.6'
   spec.add_development_dependency 'activesupport', '~> 4'
-  spec.add_development_dependency 'shoulda-matchers'
-  spec.add_development_dependency 'byebug'
-  spec.add_development_dependency 'simplecov'
-  spec.add_development_dependency 'rubocop'
+  spec.add_development_dependency 'shoulda-matchers', '3.1.2'
+  spec.add_development_dependency 'byebug', '9.0.6'
+  spec.add_development_dependency 'simplecov', '0.14.1'
+  spec.add_development_dependency 'rubocop', '0.49.1'
 end
