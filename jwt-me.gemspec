@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.summary     = 'ThredUP JWT Challenge'
   spec.description = 'A CLI for generating JSON Web Tokens'
   spec.required_rubygems_version = '>= 1.3.6'
-  spec.required_ruby_version = '~> 2'
+  spec.required_ruby_version = '~> 2.4'
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
